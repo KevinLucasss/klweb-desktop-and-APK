@@ -1,0 +1,33 @@
+/* Seção "Planos de Assinatura" da página inicial (antes do login).
+   Estas regras estavam só no workspace.css, que só carrega depois do login. */
+.welcome-plans-section { width: min(1180px, calc(100% - 3rem)); margin-inline: auto; padding: 5rem 0; border-top: 1px solid var(--border); }
+.welcome-plans-section .welcome-section-header { text-align: center; margin-bottom: 3rem; }
+.welcome-plans-section .welcome-eyebrow { color: var(--accent); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; margin-bottom: 1rem; }
+.welcome-plans-section .welcome-section-header h2 { font-family: var(--font-heading); font-size: clamp(1.85rem, 3vw, 2.75rem); color: var(--text-primary); margin: 0; }
+.welcome-plans-section .welcome-section-header p { color: var(--text-secondary); font-size: 1.08rem; margin-top: 0.5rem; }
+
+.welcome-plans-section .plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1050px; margin: 0 auto; }
+.welcome-plans-section .plan-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.2rem 1.8rem; display: flex; flex-direction: column; position: relative; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); transition: transform 0.2s, border-color 0.2s; }
+.welcome-plans-section .plan-card:hover { transform: translateY(-4px); }
+.welcome-plans-section .plan-card.highlight { border-color: var(--primary); background: linear-gradient(180deg, rgba(13, 148, 136, 0.12) 0%, var(--bg-card) 55%); box-shadow: 0 15px 35px rgba(13, 148, 136, 0.16); }
+.welcome-plans-section .plan-card.pro-card { border-color: #eab308; background: linear-gradient(180deg, rgba(234, 179, 8, 0.12) 0%, var(--bg-card) 55%); }
+.welcome-plans-section .plan-popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-gradient); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.85rem; border-radius: 999px; box-shadow: 0 4px 10px rgba(13, 148, 136, 0.4); white-space: nowrap; }
+.welcome-plans-section .plan-tier-name { font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem; }
+.welcome-plans-section .plan-price { font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.75rem; }
+.welcome-plans-section .plan-price span { font-size: 0.95rem; font-weight: 500; color: var(--text-muted); }
+.welcome-plans-section .plan-summary { font-size: 0.82rem; color: var(--text-secondary); min-height: 40px; line-height: 1.4; margin-bottom: 1.25rem; }
+.welcome-plans-section .plan-payment-methods { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 0.8rem 0; }
+.welcome-plans-section .badge-pay { display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(255, 255, 255, 0.06); border: 1px solid var(--border-highlight); color: var(--text-primary); font-size: 0.72rem; font-weight: 600; padding: 0.25rem 0.6rem; border-radius: 6px; letter-spacing: 0.02em; }
+.welcome-plans-section .badge-pay i { color: var(--accent); font-size: 0.8rem; }
+.welcome-plans-section .plan-features-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin: 0 0 2rem; padding: 0; flex: 1; }
+.welcome-plans-section .plan-features-list li { font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.6rem; }
+.welcome-plans-section .plan-features-list li i { color: var(--done-color); font-size: 0.85rem; }
+.welcome-plans-section .plan-features-list li.disabled { color: var(--text-muted); opacity: 0.6; }
+.welcome-plans-section .plan-features-list li.disabled i { color: var(--urgent-color); }
+.welcome-plans-section .btn-plan { background: rgba(255, 255, 255, 0.08); color: var(--text-primary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem; font-size: 0.92rem; font-weight: 700; cursor: pointer; transition: all 0.2s; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; }
+.welcome-plans-section .btn-plan:hover { background: rgba(255, 255, 255, 0.15); }
+.welcome-plans-section .btn-plan-primary { background: var(--primary-gradient); color: #fff; border: none; box-shadow: 0 4px 15px rgba(13, 148, 136, 0.35); }
+.welcome-plans-section .btn-plan-pro { background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: #000; border: none; box-shadow: 0 4px 15px rgba(234, 179, 8, 0.35); }
+
+@media (max-width: 900px) { .welcome-plans-section .plans-grid { grid-template-columns: 1fr; max-width: 500px; } }
+@media (max-width: 480px) { .welcome-plans-section { width: min(100% - 2rem, 1180px); padding: 3rem 0; } }

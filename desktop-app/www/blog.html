@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Central de Conhecimento - KL Web</title>
+    <link rel="stylesheet" href="core.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-container { max-width: 1180px; margin: 2rem auto; padding: 0 1.5rem; }
+        .blog-header { text-align: center; margin-bottom: 4rem; }
+        .blog-header h1 { font-family: var(--font-heading); font-size: 2.5rem; color: var(--text-primary); }
+        .blog-header p { color: var(--text-secondary); font-size: 1.1rem; margin-top: 1rem; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .article-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: transform 0.3s ease; cursor: pointer; }
+        .article-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .article-img { height: 200px; background: var(--bg-input); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-content { padding: 1.5rem; }
+        .article-content h3 { font-family: var(--font-heading); margin-bottom: 0.8rem; color: var(--text-primary); }
+        .article-content p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.5rem; }
+        .article-link { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem; }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1>Central de Conhecimento</h1>
+            <p>Tudo sobre ERP, Gestão, Agendamentos e IA para sua empresa.</p>
+        </header>
+        <div class="articles-grid">
+            <div class="article-card" onclick="location.href='artigo-kanban.html'">
+                <div class="article-img">📋</div>
+                <div class="article-content">
+                    <h3>Como organizar demandas com Kanban</h3>
+                    <p>Descubra como o método Kanban pode eliminar gargalos na sua equipe e aumentar a produtividade diária.</p>
+                    <a href="artigo-kanban.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-crm.html'">
+                <div class="article-img">👥</div>
+                <div class="article-content">
+                    <h3>O Guia Definitivo de CRM para PMEs</h3>
+                    <p>Entenda por que gerenciar contatos de forma inteligente é a chave para fechar mais vendas e fidelizar clientes.</p>
+                    <a href="artigo-crm.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-ia.html'">
+                <div class="article-img">✨</div>
+                <div class="article-content">
+                    <h3>IA na Gestão: O Futuro do Trabalho</h3>
+                    <p>Como a assistente Cláudia automatiza tarefas repetitivas e libera sua equipe para o trabalho criativo.</p>
+                    <a href="artigo-ia.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-erp.html'">
+                <div class="article-img">🏢</div>
+                <div class="article-content">
+                    <h3>ERP: A Espinha Dorsal da sua Empresa</h3>
+                    <p>Saiba como integrar financeiro, estoque e vendas em um único sistema para ter controle total do negócio.</p>
+                    <a href="artigo-erp.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-agendamentos.html'">
+                <div class="article-img">📅</div>
+                <div class="article-content">
+                    <h3>Gestão de Agendamentos Inteligentes</h3>
+                    <p>De clínicas a consultorias: como evitar buracos na agenda e reduzir a taxa de faltas dos clientes.</p>
+                    <a href="artigo-agendamentos.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-armazem.html'">
+                <div class="article-img">📦</div>
+                <div class="article-content">
+                    <h3>Controle de Armazém e Estoque</h3>
+                    <p>Como evitar a falta de produtos e o excesso de capital parado com uma gestão de estoque eficiente.</p>
+                    <a href="artigo-armazem.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card" onclick="location.href='artigo-equipes.html'">
+                <div class="article-img">🤝</div>
+                <div class="article-content">
+                    <h3>Organização de Equipes Remotas e Híbridas</h3>
+                    <p>Estratégias para manter a comunicação clara e a cultura forte, independente de onde sua equipe esteja.</p>
+                    <a href="artigo-equipes.html" class="article-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

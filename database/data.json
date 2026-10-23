@@ -1,0 +1,652 @@
+{
+  "organizations": [
+    {
+      "id": 1,
+      "name": "KL Web Tecnologia",
+      "created_at": "2026-08-24T18:56:58.367Z"
+    },
+    {
+      "id": 2,
+      "name": "Empresa de Kevin",
+      "created_at": "2026-08-25T19:27:48.435Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "organization_id": 1,
+      "name": "Carlos Eduardo (Gerente)",
+      "email": "gerente@klweb.com.br",
+      "role": "manager",
+      "avatar_color": "#3b82f6",
+      "created_at": "2026-08-24T18:56:58.368Z",
+      "cpf": "",
+      "password_hash": ""
+    },
+    {
+      "id": 2,
+      "organization_id": 1,
+      "name": "Ana Santos (Suporte)",
+      "email": "ana.suporte@klweb.com.br",
+      "role": "employee",
+      "avatar_color": "#10b981",
+      "created_at": "2026-08-24T18:56:58.368Z",
+      "cpf": "",
+      "password_hash": ""
+    },
+    {
+      "id": 3,
+      "organization_id": 1,
+      "name": "João Pedro (Desenvolvedor)",
+      "email": "joao.dev@klweb.com.br",
+      "role": "employee",
+      "avatar_color": "#8b5cf6",
+      "created_at": "2026-08-24T18:56:58.368Z",
+      "cpf": "",
+      "password_hash": ""
+    },
+    {
+      "id": 4,
+      "organization_id": 1,
+      "name": "Maria Lima (Atendimento)",
+      "email": "maria.atendimento@klweb.com.br",
+      "role": "employee",
+      "avatar_color": "#f59e0b",
+      "created_at": "2026-08-24T18:56:58.368Z",
+      "cpf": "",
+      "password_hash": ""
+    },
+    {
+      "id": 5,
+      "organization_id": 2,
+      "name": "Kevin Lucas Rios Lima dos Santos",
+      "email": "kevinlucascriative@gmail.com",
+      "cpf": "081.293.725-25",
+      "password_hash": "$2b$10$d1I7KFfyqKFnpKn5B59WA.DKtrGoLz1X1QY6pLzv3SI6EJLd2idja",
+      "role": "employee",
+      "avatar_color": "#ec4899",
+      "created_at": "2026-08-25T19:27:48.435Z"
+    }
+  ],
+  "playbooks": [
+    {
+      "id": 1,
+      "organization_id": 1,
+      "title": "Protocolo de Atendimento a Reclamações de Clientes",
+      "category": "ATENDIMENTO",
+      "steps_instruction": "1. Agradecer pelo contato e acolher a insatisfação com empatia.\n2. Identificar o ID do cliente e o histórico do chamado no sistema.\n3. Diagnosticar se a falha é técnica ou de processo interno.\n4. Se for técnico, abrir demanda de correção com prioridade ALTA.\n5. Enviar prazo estimado de solução de até 2 horas.\n6. Registrar resolução e confirmar satisfação com o cliente.",
+      "is_active": true,
+      "created_at": "2026-08-24T18:56:58.368Z"
+    },
+    {
+      "id": 2,
+      "organization_id": 1,
+      "title": "Checklist de Publicação e Deploy de Novas Páginas Web",
+      "category": "TECNICO",
+      "steps_instruction": "1. Realizar validação de tags de SEO, meta descriptions e OpenGraph.\n2. Conferir responsividade em resoluções mobile (375px), tablet e desktop.\n3. Testar formulários de contato e integração com disparos de email/WhatsApp.\n4. Otimizar imagens para formato WebP com carregamento rápido.\n5. Gerar build de produção e verificar status 200 nas URLs principais.",
+      "is_active": true,
+      "created_at": "2026-08-24T18:56:58.368Z"
+    },
+    {
+      "id": 3,
+      "organization_id": 1,
+      "title": "Processo de Onboarding e Treinamento de Novo Colaborador",
+      "category": "OPERACIONAL",
+      "steps_instruction": "1. Criar credenciais de acesso aos sistemas e workspace compartilhado.\n2. Apresentar os Playbooks da empresa e o fluxo de Kanban de demandas.\n3. Designar um mentor/gerente para acompanhamento nos primeiros 7 dias.\n4. Atribuir a primeira demanda guiada com auxílio da IA.",
+      "is_active": true,
+      "created_at": "2026-08-24T18:56:58.368Z"
+    }
+  ],
+  "demands": [
+    {
+      "id": 1,
+      "organization_id": 1,
+      "title": "Desenvolver painel responsivo de métricas de vendas",
+      "description": "Criar visualização gráfica com indicadores de conversão, ticket médio e volume de novos leads.",
+      "status": "IN_PROGRESS",
+      "priority": "ALTA",
+      "due_date": "2026-08-30",
+      "assigned_to": 3,
+      "created_by": 1,
+      "created_at": "2026-08-23T18:56:58.368Z",
+      "updated_at": "2026-08-24T18:56:58.368Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Definir os endpoints de agregação de vendas no backend",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "Endpoints /api/stats/sales e /api/stats/conversion mapeados com sucesso."
+        },
+        {
+          "id": 2,
+          "title": "Desenvolver componentes visuais com Chart.js/CSS",
+          "is_completed": true,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 3,
+          "title": "Testar responsividade e filtros de período",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos (Gerente): Iniciei o escopo desta demanda e defini a prioridade como Alta. João, por favor assuma o desenvolvimento do gráfico.",
+          "created_at": "2026-08-23T22:56:58.368Z"
+        },
+        {
+          "id": 2,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "DemandIA: Analisei o playbook de desenvolvimento e estruturei os 3 passos de execução recomendados.",
+          "created_at": "2026-08-23T23:56:58.368Z"
+        },
+        {
+          "id": 3,
+          "user_id": 3,
+          "is_ai": false,
+          "comment": "João (Dev): Assumi a tarefa dada pelo Carlos. Já finalizei o endpoint e a estrutura do componente. Dando continuidade!",
+          "created_at": "2026-08-24T13:56:58.368Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "organization_id": 1,
+      "title": "Auditoria de Segurança e Validação de Sessões",
+      "description": "Verificar vulnerabilidades de autenticação e expiração de tokens da plataforma.",
+      "status": "TODO",
+      "priority": "URGENTE",
+      "due_date": "2026-08-26",
+      "assigned_to": 3,
+      "created_by": 1,
+      "created_at": "2026-08-24T06:56:58.368Z",
+      "updated_at": "2026-08-24T19:12:51.155Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Revisar headers de segurança (Helmet, CORS)",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "⚡ **[Execução Autônoma DemandIA]**\n\n✅ **Etapa executada:** Revisar headers de segurança (Helmet, CORS)\n📋 **Demanda:** Auditoria de Segurança e Validação de Sessões\n\n**Resolução técnica gerada:**\n- Análise de conformidade realizada com sucesso.\n- Padrões dos Playbooks operacionais aplicados.\n- Estrutura e parâmetros validados para prosseguimento da equipe.\n\n*Esta etapa foi processada e registrada no histórico da demanda para continuidade do trabalho.*"
+        },
+        {
+          "id": 2,
+          "title": "Validar sanitização de inputs contra XSS/SQL Injection",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 3,
+          "title": "1. Diagnosticar e levantar requisitos para \"Auditoria de Segurança e Validação de Sessões\"",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 4,
+          "title": "2. Elaborar plano de execução conforme padrões da empresa",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 5,
+          "title": "3. Implementar a solução e registrar evidências",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 6,
+          "title": "4. Validar resultado e homologar com o gerente",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos (Gerente): Demanda prioritária para o fechamento do ciclo.",
+          "created_at": "2026-08-24T06:56:58.368Z"
+        },
+        {
+          "id": 2,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "DemandIA: Analisei os playbooks e elaborei 4 etapas recomendadas para esta demanda.",
+          "created_at": "2026-08-24T19:12:50.536Z"
+        },
+        {
+          "id": 3,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "⚡ **[Execução Autônoma DemandIA]**\n\n✅ **Etapa executada:** Revisar headers de segurança (Helmet, CORS)\n📋 **Demanda:** Auditoria de Segurança e Validação de Sessões\n\n**Resolução técnica gerada:**\n- Análise de conformidade realizada com sucesso.\n- Padrões dos Playbooks operacionais aplicados.\n- Estrutura e parâmetros validados para prosseguimento da equipe.\n\n*Esta etapa foi processada e registrada no histórico da demanda para continuidade do trabalho.*",
+          "created_at": "2026-08-24T19:12:51.155Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "organization_id": 1,
+      "title": "Otimizar velocidade de carregamento da Home",
+      "description": "Reduzir tempo de carregamento inicial para menos de 1.2 segundos através de compressão de assets.",
+      "status": "REVIEW",
+      "priority": "MEDIA",
+      "due_date": "2026-08-28",
+      "assigned_to": 2,
+      "created_by": 1,
+      "created_at": "2026-08-22T18:56:58.368Z",
+      "updated_at": "2026-08-24T18:56:58.368Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Converter imagens para WebP",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "Imagens convertidas e reduzidas em 68% de tamanho."
+        },
+        {
+          "id": 2,
+          "title": "Minificar arquivos CSS e JS",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "Bundle reduzido."
+        },
+        {
+          "id": 3,
+          "title": "Validar pontuação no PageSpeed",
+          "is_completed": true,
+          "executed_by_ai": false,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 2,
+          "is_ai": false,
+          "comment": "Ana (Suporte): Apliquei as otimizações sugeridas pela IA. Aguardando validação do gerente.",
+          "created_at": "2026-08-24T16:56:58.368Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "organization_id": 1,
+      "title": "Configurar disparo automático de boas-vindas para clientes",
+      "description": "Automatizar mensagem de integração após o cadastro do cliente na plataforma.",
+      "status": "DONE",
+      "priority": "BAIXA",
+      "due_date": "2026-08-22",
+      "assigned_to": 4,
+      "created_by": 1,
+      "created_at": "2026-08-21T18:56:58.368Z",
+      "updated_at": "2026-08-24T18:56:58.368Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Criar template de mensagem acolhedora",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "Template criado e aprovado."
+        },
+        {
+          "id": 2,
+          "title": "Conectar webhook de ativação",
+          "is_completed": true,
+          "executed_by_ai": false,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 4,
+          "is_ai": false,
+          "comment": "Maria: Tarefa finalizada e testada com sucesso!",
+          "created_at": "2026-08-23T18:56:58.368Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "organization_id": 1,
+      "title": "[Ouvidoria] RECLAMACAO: O bot�o de download da fatura n�o est� funcionando no painel...",
+      "description": "Feedback enviado por Cliente Exemplo:\n\"O bot�o de download da fatura n�o est� funcionando no painel mobile.\"\n\nNecessário tratar o ponto reportado e garantir satisfação.",
+      "status": "TODO",
+      "priority": "ALTA",
+      "due_date": null,
+      "assigned_to": null,
+      "created_by": 1,
+      "created_at": "2026-08-24T19:15:59.586Z",
+      "updated_at": "2026-08-24T19:15:59.591Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "1. Analisar histórico e motivo do feedback de Cliente Exemplo",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 2,
+          "title": "2. Implementar ação corretiva ou melhoria solicitada",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        },
+        {
+          "id": 3,
+          "title": "3. Elaborar resposta formal e notificar o remetente",
+          "is_completed": false,
+          "executed_by_ai": false,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos Eduardo (Gerente): Criou esta demanda no sistema.",
+          "created_at": "2026-08-24T19:15:59.586Z"
+        },
+        {
+          "id": 2,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "DemandIA: Demanda gerada automaticamente a partir do Feedback #4 (RECLAMACAO) enviado por Cliente Exemplo.",
+          "created_at": "2026-08-24T19:15:59.591Z"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "organization_id": 1,
+      "contact_id": 1,
+      "title": "[IA Autônoma] Criar demanda para o Jo�o Pedro elaborar proposta comercial ...",
+      "description": "Demanda gerada automaticamente via comando da IA:\n\"Criar demanda para o Jo�o Pedro elaborar proposta comercial para o Marcos Oliveira da TechLog e testar envio de fatura\"",
+      "status": "REVIEW",
+      "priority": "ALTA",
+      "eisenhower_quadrant": "SCHEDULE",
+      "due_date": null,
+      "assigned_to": 3,
+      "created_by": 1,
+      "created_at": "2026-08-24T19:26:18.565Z",
+      "updated_at": "2026-08-24T19:26:20.389Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "1. Levantar requisitos e contexto: \"Criar demanda para o Jo�o Pedro elaborar\"",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": null
+        },
+        {
+          "id": 2,
+          "title": "2. Executar procedimento conforme os Playbooks corporativos",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": null
+        },
+        {
+          "id": 3,
+          "title": "3. Homologar e registrar evidências de entrega",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos Eduardo (Gerente): Criou esta demanda no sistema.",
+          "created_at": "2026-08-24T19:26:18.565Z"
+        },
+        {
+          "id": 2,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "⚡ **[Relatório de Execução Autônoma - DemandIA Autopilot]**\n\n📋 **Demanda Concluída:** [IA Autônoma] Criar demanda para o Jo�o Pedro elaborar proposta comercial ...\n👤 **Solicitado por:** Carlos Eduardo (Gerente)\n\n**Resumo das Etapas Processadas:**\n✅ **Etapa 1 (1. Levantar requisitos e contexto: \"Criar demanda para o Jo�o Pedro elaborar\"):** Processada em conformidade com as diretrizes e playbooks corporativos.\n✅ **Etapa 2 (2. Executar procedimento conforme os Playbooks corporativos):** Processada em conformidade com as diretrizes e playbooks corporativos.\n✅ **Etapa 3 (3. Homologar e registrar evidências de entrega):** Processada em conformidade com as diretrizes e playbooks corporativos.\n\n**Parecer Conclusivo:**\nTodas as etapas foram auditadas e resolvidas pela IA. A demanda está pronta para revisão e homologação pelo gerente.",
+          "created_at": "2026-08-24T19:26:20.379Z"
+        },
+        {
+          "id": 3,
+          "user_id": null,
+          "is_ai": false,
+          "comment": "Status alterado de TODO para REVIEW.",
+          "created_at": "2026-08-24T19:26:20.389Z"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "organization_id": 1,
+      "contact_id": null,
+      "title": "[IA Autônoma] Uma sicronização de aplicativos que o Kevin deve fazer....",
+      "description": "Demanda gerada automaticamente via comando da IA:\n\"Uma sicronização de aplicativos que o Kevin deve fazer.\"",
+      "status": "REVIEW",
+      "priority": "ALTA",
+      "eisenhower_quadrant": "SCHEDULE",
+      "due_date": null,
+      "assigned_to": 3,
+      "created_by": 1,
+      "created_at": "2026-08-24T19:35:42.480Z",
+      "updated_at": "2026-08-24T19:36:03.907Z",
+      "steps": [
+        {
+          "id": 1,
+          "title": "1. Levantar requisitos e contexto: \"Uma sicronização de aplicativos que o Ke\"",
+          "is_completed": true,
+          "executed_by_ai": true,
+          "ai_result": "⚡ **[Execução Autônoma DemandIA]**\n\n✅ **Etapa executada:** 1. Levantar requisitos e contexto: \"Uma sicronização de aplicativos que o Ke\"\n📋 **Demanda:** [IA Autônoma] Uma sicronização de aplicativos que o Kevin deve fazer....\n\n**Resolução técnica gerada:**\n- Diagnóstico e execução realizados em conformidade com os Playbooks da empresa.\n- Parâmetros validados para continuidade da equipe."
+        },
+        {
+          "id": 2,
+          "title": "2. Executar procedimento conforme os Playbooks corporativos",
+          "is_completed": false,
+          "executed_by_ai": true,
+          "ai_result": null
+        },
+        {
+          "id": 3,
+          "title": "3. Homologar e registrar evidências de entrega",
+          "is_completed": false,
+          "executed_by_ai": true,
+          "ai_result": null
+        }
+      ],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos Eduardo (Gerente): Criou esta demanda no sistema.",
+          "created_at": "2026-08-24T19:35:42.480Z"
+        },
+        {
+          "id": 2,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "⚡ **[Relatório de Execução Autônoma - DemandIA Autopilot]**\n\n📋 **Demanda Concluída:** [IA Autônoma] Uma sicronização de aplicativos que o Kevin deve fazer....\n👤 **Solicitado por:** Carlos Eduardo (Gerente)\n\n**Resumo das Etapas Processadas:**\n✅ **Etapa 1 (1. Levantar requisitos e contexto: \"Uma sicronização de aplicativos que o Ke\"):** Processada em conformidade com as diretrizes e playbooks corporativos.\n✅ **Etapa 2 (2. Executar procedimento conforme os Playbooks corporativos):** Processada em conformidade com as diretrizes e playbooks corporativos.\n✅ **Etapa 3 (3. Homologar e registrar evidências de entrega):** Processada em conformidade com as diretrizes e playbooks corporativos.\n\n**Parecer Conclusivo:**\nTodas as etapas foram auditadas e resolvidas pela IA. A demanda está pronta para revisão e homologação pelo gerente.",
+          "created_at": "2026-08-24T19:35:44.227Z"
+        },
+        {
+          "id": 3,
+          "user_id": null,
+          "is_ai": false,
+          "comment": "Status alterado de TODO para REVIEW.",
+          "created_at": "2026-08-24T19:35:44.232Z"
+        },
+        {
+          "id": 4,
+          "user_id": null,
+          "is_ai": true,
+          "comment": "⚡ **[Execução Autônoma DemandIA]**\n\n✅ **Etapa executada:** 1. Levantar requisitos e contexto: \"Uma sicronização de aplicativos que o Ke\"\n📋 **Demanda:** [IA Autônoma] Uma sicronização de aplicativos que o Kevin deve fazer....\n\n**Resolução técnica gerada:**\n- Diagnóstico e execução realizados em conformidade com os Playbooks da empresa.\n- Parâmetros validados para continuidade da equipe.",
+          "created_at": "2026-08-24T19:36:03.907Z"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "organization_id": 1,
+      "contact_id": null,
+      "title": "Estruturar marketing",
+      "description": "",
+      "status": "TODO",
+      "priority": "MEDIA",
+      "eisenhower_quadrant": "DELEGATE",
+      "due_date": null,
+      "assigned_to": null,
+      "created_by": 1,
+      "created_at": "2026-08-26T18:42:29.495Z",
+      "updated_at": "2026-08-26T18:42:29.495Z",
+      "steps": [],
+      "activities": [
+        {
+          "id": 1,
+          "user_id": 1,
+          "is_ai": false,
+          "comment": "Carlos Eduardo (Gerente): Criou esta demanda no sistema.",
+          "created_at": "2026-08-26T18:42:29.495Z"
+        }
+      ]
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 1,
+      "organization_id": 1,
+      "type": "RECLAMACAO",
+      "sender_name": "Marcos Oliveira",
+      "sender_email": "marcos@cliente.com",
+      "content": "O sistema apresentou lentidão excessiva no carregamento da tela de relatórios nesta manhã.",
+      "status": "CONVERTED_TO_DEMAND",
+      "ai_analysis": "Gravidade: Alta. Impacto direto na experiência do usuário final. Recomendado verificar queries e cache de relatórios.",
+      "demand_id": 1,
+      "created_at": "2026-08-23T12:56:58.368Z"
+    },
+    {
+      "id": 2,
+      "organization_id": 1,
+      "type": "MELHORIA",
+      "sender_name": "Juliana Mendes",
+      "sender_email": "juliana@parceiro.com",
+      "content": "Seria excelente se pudéssemos exportar os dados das demandas diretamente para planilha Excel ou PDF.",
+      "status": "PENDING",
+      "ai_analysis": "Gravidade: Média. Oportunidade de melhoria de usabilidade e produtividade para a equipe.",
+      "demand_id": null,
+      "created_at": "2026-08-24T10:56:58.368Z"
+    },
+    {
+      "id": 3,
+      "organization_id": 1,
+      "type": "ELOGIO",
+      "sender_name": "Renato Silveira",
+      "sender_email": "renato@empresa.com",
+      "content": "O atendimento da equipe e a agilidade da IA nas respostas foram excepcionais!",
+      "status": "RESOLVED",
+      "ai_analysis": "Sentimento positivo de alta satisfação.",
+      "demand_id": null,
+      "created_at": "2026-08-23T02:56:58.368Z"
+    },
+    {
+      "id": 4,
+      "organization_id": 1,
+      "type": "RECLAMACAO",
+      "sender_name": "Cliente Exemplo",
+      "sender_email": "cliente@teste.com",
+      "content": "O bot�o de download da fatura n�o est� funcionando no painel mobile.",
+      "status": "CONVERTED_TO_DEMAND",
+      "ai_analysis": "📊 **Análise IA de Feedback:**\n- **Gravidade:** ALTA\n- **Diagnóstico:** Demanda de reclamacao requer atenção da equipe responsável.\n- **Ação recomendada:** Converter em demanda operacional e notificar o gerente.\n- **Resposta sugerida:** Agradecer a mensagem e informar que o caso está em tratamento prioritário.",
+      "demand_id": 5,
+      "created_at": "2026-08-24T19:15:58.942Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "organization_id": 1,
+      "name": "Marcos Oliveira",
+      "company": "TechLog Soluções",
+      "email": "marcos@techlog.com.br",
+      "phone": "+55 11 98765-4321",
+      "whatsapp": "5511987654321",
+      "role_title": "Diretor de Operações",
+      "tag": "CLIENTE_VIP",
+      "notes": "Cliente corporativo com contrato mensal de suporte e manutenção de sistemas.",
+      "created_at": "2026-08-14T19:26:00.227Z"
+    },
+    {
+      "id": 2,
+      "organization_id": 1,
+      "name": "Juliana Mendes",
+      "company": "Inovare Marketing",
+      "email": "juliana@inovare.com.br",
+      "phone": "+55 21 99887-1122",
+      "whatsapp": "5521998871122",
+      "role_title": "Gerente de Projetos",
+      "tag": "PARCEIRO",
+      "notes": "Parceiro de co-marketing e desenvolvimento de landing pages conjuntas.",
+      "created_at": "2026-08-19T19:26:00.227Z"
+    },
+    {
+      "id": 3,
+      "organization_id": 1,
+      "name": "Roberto Gomes",
+      "company": "Distribuidora Nacional",
+      "email": "roberto@distribuidora.com.br",
+      "phone": "+55 31 97654-3210",
+      "whatsapp": "5531976543210",
+      "role_title": "CEO",
+      "tag": "LEAD",
+      "notes": "Interessado na contratação do módulo completo de automação e IA corporativa.",
+      "created_at": "2026-08-22T19:26:00.227Z"
+    },
+    {
+      "id": 4,
+      "organization_id": 1,
+      "name": "Carla Dias",
+      "company": "CloudCore Hosting",
+      "email": "carla@cloudcore.com",
+      "phone": "+55 11 91234-5678",
+      "whatsapp": "5511912345678",
+      "role_title": "Key Account Manager",
+      "tag": "FORNECEDOR",
+      "notes": "Fornecedora de infraestrutura cloud e servidores dedicados da KL Web.",
+      "created_at": "2026-08-04T19:26:00.227Z"
+    }
+  ],
+  "subscription": {
+    "organization_id": 1,
+    "plan_tier": "PRO",
+    "ai_executions_used": 19,
+    "monthly_ai_limit": 150,
+    "status": "ACTIVE",
+    "renewed_at": "2026-08-24T19:26:00.227Z"
+  },
+  "subscriptions": [
+    {
+      "organization_id": 2,
+      "plan_tier": "STARTER",
+      "ai_executions_used": 0,
+      "monthly_ai_limit": 10,
+      "status": "ACTIVE",
+      "renewed_at": "2026-08-25T19:27:48.435Z"
+    }
+  ]
+}

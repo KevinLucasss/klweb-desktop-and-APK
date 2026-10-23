@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tutorial KL Web — como usar o site e a Cláudia</title>
+<meta name="description" content="Aprenda a usar a KL Web: quadro de demandas, CRM, anotações, agenda de pacientes para clínicas, automações e todos os comandos da assistente com IA, a Cláudia.">
+<link rel="canonical" href="https://kl-web.onrender.com/tutorial.html">
+<style>
+:root{--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--accent:#0284c7;--soft:#e0f2fe;--code:#f1f5f9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#111a2e;--text:#e2e8f0;--muted:#94a3b8;--line:#1e293b;--accent:#38bdf8;--soft:#0c2a3f;--code:#0b1220}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom,0)}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:.6rem 1rem;padding-top:calc(.6rem + env(safe-area-inset-top,0px));display:flex;gap:.4rem;overflow-x:auto;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.85rem;padding:.3rem .7rem;border-radius:99px;border:1px solid var(--line)}
+nav a:hover{color:var(--accent);border-color:var(--accent)}
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem 4rem}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.2;margin:.5rem 0}
+h2{font-size:1.4rem;margin:2.6rem 0 .6rem;padding-top:.4rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+p{margin:.4rem 0}.lead{color:var(--muted);font-size:1.05rem}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.25rem;margin:1rem 0}
+ol,ul{padding-left:1.25rem;margin:.4rem 0}li{margin:.25rem 0}
+.tip{background:var(--soft);border-left:4px solid var(--accent);border-radius:8px;padding:.6rem .9rem;margin:.8rem 0;font-size:.95rem}
+code{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:.1rem .4rem;font:.88em ui-monospace,Menlo,Consolas,monospace;word-break:break-word}
+.tbl{overflow-x:auto;margin:.6rem 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.tag{display:inline-block;font-size:.72rem;padding:.05rem .5rem;border-radius:99px;background:var(--soft);color:var(--accent);margin-left:.3rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+<nav>
+<a href="#comecar">Começar</a><a href="#cludia">Cláudia (IA)</a><a href="#comandos">Comandos</a><a href="#demandas">Demandas</a><a href="#crm">CRM</a><a href="#calendario">Calendário</a><a href="#anotacoes">Anotações</a><a href="#pacientes">Pacientes</a><a href="#automacoes">Automações</a><a href="#equipe">Equipe</a><a href="#conta">Minha conta</a><a href="#planos">Planos</a><a href="#ajuda">Problemas</a>
+</nav>
+<main>
+<h1>Tutorial KL Web</h1>
+<p class="lead">Guia rápido para usar cada área do site e todos os comandos que a Cláudia entende. Você não precisa ler tudo: use o menu acima para ir direto ao que precisa.</p>
+
+<h2 id="comecar">1. Primeiros passos</h2>
+<section>
+<ol>
+<li><b>Criar a conta:</b> na tela inicial clique em cadastrar, preencha nome, <b>e-mail completo</b> (ex.: <code>nome@gmail.com</code>), telefone e senha (mínimo 4 caracteres) e aceite a política de privacidade.</li>
+<li><b>Dono da empresa:</b> escolha “criar empresa” e informe o nome. Depois, em <b>Empresa &amp; Conexões</b>, você encontra o <b>código da empresa</b> para convidar a equipe.</li>
+<li><b>Funcionário:</b> escolha “entrar em uma empresa” e digite o código que o dono passou.</li>
+<li><b>Esqueceu a senha?</b> Na tela de login use “Esqueci minha senha”. Você recebe um link por e-mail para criar uma nova.</li>
+</ol>
+<div class="tip">Cargos: <b>Dono</b> e <b>Gerente</b> administram a equipe e as configurações. <b>Funcionário</b> trabalha nas próprias demandas e vê o que a empresa compartilha.</div>
+</section>
+
+<h2 id="cludia">2. Cláudia, a assistente de IA</h2>
+<section>
+<p>Abra <b>IA Autônoma &amp; Chat</b> no menu. Escreva em português, como falaria com uma pessoa. A Cláudia está nos planos <b>Starter</b> e <b>Pro AI</b>.</p>
+<ul>
+<li>A conversa fica salva e é <b>compartilhada com a empresa</b>: as mensagens dos colegas aparecem com o nome deles, por exemplo “Maria (colega)”. As suas aparecem como “Você”.</li>
+<li>Escreva o <b>assunto entre aspas</b> quando quiser ter certeza do título: <code>Criar demanda "Revisar contrato"</code>.</li>
+<li>Se faltar alguma informação, a Cláudia pergunta (por exemplo, o telefone de um contato).</li>
+<li>Nos pedidos de <b>anotações, pacientes e agendamentos</b>, escreva tudo em <b>uma mensagem só</b> (nome, data, hora…): ela não guarda a mensagem anterior para completar o pedido depois.</li>
+<li>Para trocar senha ou e-mail, ela conduz passo a passo. Digite <code>cancelar</code> para sair a qualquer momento.</li>
+</ul>
+</section>
+
+<h2 id="comandos">3. Todos os comandos</h2>
+<div class="tbl"><table>
+<thead><tr><th>O que fazer</th><th>Exemplo para digitar</th><th>Observação</th></tr></thead>
+<tbody>
+<tr><td>Criar demanda</td><td><code>Criar demanda "Revisar contrato" urgente para joao@empresa.com</code></td><td>Prioridade: urgente, alta, baixa (padrão: média). O e-mail do responsável é opcional.</td></tr>
+<tr><td>Criar demanda simples</td><td><code>Crie uma tarefa: enviar proposta, prioridade alta</code></td><td>O título é o assunto, nunca a palavra “demanda”.</td></tr>
+<tr><td>Editar demanda</td><td><code>Mude a tarefa "Revisar contrato" para concluído</code></td><td>Status: concluído, em andamento, para fazer. Também aceita “urgente”.</td></tr>
+<tr><td>Adicionar contato</td><td><code>Adicionar novo contato: Kevin, 99999999999</code></td><td>Nome e telefone são obrigatórios. E-mail é opcional: <code>… Kevin, 99999999999, exemplo@email.com</code>.</td></tr>
+<tr><td>Agendar evento</td><td><code>Criar evento "teste" para dia 25/10/2026 às 14:00</code></td><td>Data no formato dia/mês/ano. Sem hora, usa 09:00.</td></tr>
+<tr><td>Agendar consulta, exame ou terapia <span class="tag">novo</span></td><td><code>Agendar consulta para Maria Silva dia 25/10/2026 às 14:00 com a Dra. Ana, convênio Unimed</code></td><td>Se a pessoa já estiver no CRM, a Cláudia aproveita telefone, CPF e convênio dela. Veja a seção <a href="#pacientes">Pacientes</a>.</td></tr>
+<tr><td>Remarcar, cancelar ou confirmar <span class="tag">novo</span></td><td><code>Remarque a consulta da Maria Silva para dia 27/10/2026 às 15:30</code> · <code>Cancele a consulta da Maria Silva do dia 25/10/2026</code> · <code>Marque a consulta da Maria Silva como confirmada</code></td><td>“Cancelar” marca como <b>Cancelado</b> e mantém no histórico. Para sumir do calendário, peça para <b>excluir</b>.</td></tr>
+<tr><td>Excluir evento ou agendamento <span class="tag">novo</span></td><td><code>Exclua o evento "Reunião de alinhamento"</code></td><td>Se houver vários com o mesmo nome, informe também a data.</td></tr>
+<tr><td>Cadastrar paciente <span class="tag">novo</span></td><td><code>Cadastrar paciente Maria Silva, telefone 71999998888, CPF 529.982.247-25, nascimento 12/03/1990, convênio Unimed</code></td><td>Nome e telefone são obrigatórios; o resto é opcional. O CPF é conferido.</td></tr>
+<tr><td>Editar contato ou paciente <span class="tag">novo</span></td><td><code>Mude o convênio da Maria Silva para Bradesco Saúde</code></td><td>Identifique a pessoa pelo nome completo, CPF ou telefone.</td></tr>
+<tr><td>Ver dados de um paciente <span class="tag">novo</span></td><td><code>Mostre os dados da paciente Maria Silva</code></td><td></td></tr>
+<tr><td>Excluir contato <span class="tag">novo</span></td><td><code>Exclua o contato Maria Silva</code></td><td>A Cláudia só exclui quando você pede de forma clara.</td></tr>
+<tr><td>Criar anotação <span class="tag">novo</span></td><td><code>Anote: ligar para o fornecedor na segunda</code> · <code>Criar anotação "Orientações" com o texto: chegar 15 minutos antes</code></td><td>Aparece na aba Anotações, para toda a empresa.</td></tr>
+<tr><td>Editar anotação <span class="tag">novo</span></td><td><code>Acrescente na anotação "Orientações": levar documento com foto</code> · <code>Mude o título da anotação "Orientações" para "Orientações aos pacientes"</code></td><td>Só quem escreveu a anotação (ou o Dono/Gerente) pode alterar.</td></tr>
+<tr><td>Apagar ou listar anotações <span class="tag">novo</span></td><td><code>Apague a anotação "Orientações"</code> · <code>Liste as anotações</code></td><td></td></tr>
+<tr><td>Criar automação</td><td><code>Criar automação: quando uma demanda urgente for criada, me avise por e-mail</code></td><td>Veja a seção de automações. Aparece na aba Automações.</td></tr>
+<tr><td>Ver a equipe</td><td><code>Quem está na minha empresa?</code></td><td>Mostra nome, cargo, e-mail e telefone.</td></tr>
+<tr><td>Aceitar solicitações <span class="tag">Dono/Gerente</span></td><td><code>Aceitar todas as solicitações de entrada</code></td><td>Aprova quem entrou com o código da empresa.</td></tr>
+<tr><td>Tema</td><td><code>Mudar para tema escuro</code> · <code>tema claro</code></td><td></td></tr>
+<tr><td>Modo daltônico</td><td><code>Ativar modo daltônico</code> · <code>Desativar modo daltônico</code></td><td></td></tr>
+<tr><td>Zoom da tela</td><td><code>Mudar zoom para 120%</code> · <code>Resetar zoom</code></td><td>De 50% a 150%.</td></tr>
+<tr><td>Trocar minha senha</td><td><code>Mudar minha senha</code></td><td>Ela pede a senha atual, a nova e a confirmação.</td></tr>
+<tr><td>Trocar e-mail</td><td><code>Trocar meu e-mail</code></td><td>Pede a senha atual e o novo e-mail, e depois o código de 6 dígitos enviado ao novo endereço.</td></tr>
+<tr><td>Senha/e-mail de um colega <span class="tag">Dono/Gerente</span></td><td><code>Mudar a senha de maria@empresa.com</code></td><td>Funcionário comum não pode alterar dados de outros.</td></tr>
+<tr><td>Dúvidas</td><td><code>Como funciona o Kanban?</code></td><td>Qualquer outra pergunta vai para a IA, que responde ou executa a ação.</td></tr>
+</tbody></table></div>
+
+<h2 id="demandas">4. Quadro de demandas (Kanban)</h2>
+<section>
+<ul>
+<li>As colunas são <b>Para fazer</b>, <b>Em andamento</b> e <b>Concluído</b>. Arraste o cartão para mudar de coluna; todos da empresa veem a mudança na hora.</li>
+<li>Clique no cartão para abrir: há <b>checklist</b>, <b>comentários</b>, responsável e prioridade.</li>
+<li>Para mandar uma tarefa a alguém, use <b>Empresa &amp; Conexões → Criar &amp; Atribuir Demanda</b>: a pessoa é avisada por notificação no painel (e por e-mail, nos planos Starter e Pro AI).</li>
+<li>Plano gratuito: até <b>15 demandas</b>. Starter e Pro AI: sem limite.</li>
+</ul>
+</section>
+
+<h2 id="crm">5. CRM &amp; Contatos</h2>
+<section>
+<ul>
+<li>Clique em <b>Novo Contato</b>, preencha nome e telefone (o resto é opcional) e salve. Também dá para pedir à Cláudia.</li>
+<li><b>Todos os membros da empresa veem os mesmos contatos.</b> Quando alguém adiciona ou exclui um contato, a lista dos colegas atualiza sozinha.</li>
+<li>Em cada linha há atalhos para abrir o WhatsApp do cliente e enviar e-mail direto, além do botão <b>lápis</b> para <b>editar</b> o contato.</li>
+<li>Para clínicas e consultórios, o contato tem uma <b>ficha do paciente</b> (veja a seção <a href="#pacientes">Pacientes</a>).</li>
+</ul>
+</section>
+
+<h2 id="calendario">6. Calendário &amp; Eventos</h2>
+<section>
+<p>Crie reuniões, lembretes e prazos pela aba ou pela Cláudia. Demandas com prazo aparecem no calendário automaticamente, e os membros da empresa são avisados de novos eventos. No plano gratuito a empresa pode ter até <b>5 eventos</b>; no Starter e no Pro AI o calendário é ilimitado. Ao atingir o limite, o botão <b>Novo Evento</b> leva você à página de planos. Cada compromisso tem o botão <b>lápis</b> para editar ou remarcar. Para marcar um paciente ou cliente, escolha o tipo <b>Agendamento de paciente / cliente</b> (veja a seção <a href="#pacientes">Pacientes</a>); esses agendamentos contam no limite de eventos do plano.</p>
+</section>
+
+<h2 id="anotacoes">7. Anotações</h2>
+<section>
+<p>Abra <b>Anotações</b> no menu para guardar qualquer coisa: lembretes, ideias, orientações da equipe, rascunhos de mensagens.</p>
+<ol>
+<li>Clique em <b>Nova Anotação</b>, escreva o <b>título</b> e o texto, escolha uma <b>cor</b> e, se quiser, marque <b>Fixar no topo</b>. Clique em <b>Salvar Anotação</b>.</li>
+<li>Use a caixa de <b>busca</b> para achar uma anotação pelo título ou pelo texto.</li>
+<li>Clique em uma anotação para abrir e editar. Para <b>apagar</b>, use a lixeira no cartão ou o botão <b>Apagar</b> dentro da anotação, e confirme.</li>
+</ol>
+<ul>
+<li>As anotações ficam salvas no <b>Workspace</b>: toda a equipe da empresa vê, em qualquer aparelho.</li>
+<li>Só <b>quem escreveu</b> a anotação, o <b>Dono</b> ou o <b>Gerente</b> pode editar ou apagar. Para os outros, ela abre em modo de leitura.</li>
+<li>O conteúdo é guardado de forma criptografada. Mesmo assim, evite anotar senhas.</li>
+<li>Também dá para pedir à Cláudia: <code>Anote: ligar para o fornecedor na segunda</code>.</li>
+</ul>
+</section>
+
+<h2 id="pacientes">8. Pacientes e agendamentos (clínicas, consultórios, terapia)</h2>
+<section>
+<p>Pensado para clínicas, consultórios médicos e odontológicos, psicólogos, terapeutas e laboratórios. Tudo é opcional: se você não atende pacientes, é só ignorar esses campos.</p>
+<h3>Ficha do paciente (em CRM &amp; Contatos)</h3>
+<ol>
+<li>Clique em <b>Novo Contato</b> (ou no lápis de um contato já existente).</li>
+<li>Preencha nome e telefone e abra <b>Ficha do paciente</b>.</li>
+</ol>
+<ul>
+<li><b>Identificação:</b> CPF (com conferência dos dígitos), RG, data de nascimento, sexo, estado civil e profissão.</li>
+<li><b>Contato e endereço:</b> segundo telefone, CEP, endereço, cidade e UF.</li>
+<li><b>Convênio:</b> plano de saúde, número da carteirinha e validade.</li>
+<li><b>Responsável e emergência:</b> responsável e CPF dele (para menores de idade), contato e telefone de emergência.</li>
+<li><b>Saúde:</b> queixa ou motivo principal, histórico, alergias, medicamentos em uso, quem encaminhou e profissional de preferência.</li>
+</ul>
+<h3>Agendar consulta, exame ou terapia (em Calendário &amp; Eventos)</h3>
+<ol>
+<li>Clique em <b>Novo Evento</b> e, em <b>Tipo de Evento</b>, escolha <b>Agendamento de paciente / cliente</b>.</li>
+<li>Se o paciente já está no CRM, escolha-o na lista e os dados (nome, telefone, CPF, convênio…) são preenchidos sozinhos. Se não estiver, digite o nome.</li>
+<li>Informe o <b>tipo de atendimento</b> (consulta, exame, terapia, retorno, avaliação ou procedimento), o profissional, a especialidade, a sala ou unidade, a duração, se é presencial ou online, se é particular ou convênio, o valor e a <b>situação</b> (agendado, confirmado, compareceu, faltou, cancelado ou remarcado).</li>
+<li>Se deixar o título em branco, ele é criado sozinho, por exemplo “Consulta - Maria Silva”.</li>
+<li>Para <b>remarcar</b> ou mudar a situação, clique no <b>lápis</b> do compromisso na lista do calendário.</li>
+</ol>
+<div class="tip"><b>Privacidade (LGPD):</b> CPF, histórico de saúde e demais dados da ficha são <b>dados pessoais sensíveis</b>. Eles ficam salvos criptografados no servidor e não são guardados no cache do seu navegador, mas ficam visíveis para toda a equipe da empresa. Preencha só o necessário e com o consentimento do paciente.</div>
+<h3>Com a Cláudia</h3>
+<p>Ela cria, edita e exclui contatos, fichas e agendamentos. Exemplos: <code>Cadastrar paciente Maria Silva, telefone 71999998888, CPF 529.982.247-25, convênio Unimed</code> · <code>Agendar consulta para Maria Silva dia 25/10/2026 às 14:00 com a Dra. Ana</code> · <code>Remarque a consulta da Maria Silva para dia 27/10/2026 às 15:30</code>. A lista completa está na seção <a href="#comandos">Comandos</a>.</p>
+</section>
+
+<h2 id="automacoes">9. Automações</h2>
+<section>
+<p>Uma automação diz: <b>“quando isso acontecer, faça aquilo”</b>. Escreva em linguagem normal, na aba <b>Automações</b> ou no chat da Cláudia.</p>
+<h3>Gatilhos (quando)</h3>
+<ul><li>Demanda criada · atribuída · marcada como urgente · concluída</li><li>Evento criado no calendário</li><li>Contato novo no CRM</li><li>Alguém fez login</li></ul>
+<h3>Ações (o que fazer)</h3>
+<ul><li>Enviar e-mail (ao responsável pela demanda ou a um endereço fixo)</li><li>Criar um lembrete no calendário</li><li>Criar uma nova demanda de acompanhamento</li></ul>
+<div class="tip">Exemplos: “Quando uma demanda for concluída, avise o responsável por e-mail” · “Sempre que entrar um contato novo, crie uma demanda ‘Ligar para o cliente’”. Para apagar, use o botão de remover na lista.</div>
+</section>
+
+<h2 id="equipe">10. Equipe (Empresa &amp; Conexões)</h2>
+<section>
+<ul>
+<li><b>Adicionar colaborador:</b> digite o e-mail (a pessoa precisa já ter conta), escolha o cargo e clique em cadastrar.</li>
+<li><b>Substituir e-mail perdido <span class="tag">Dono/Gerente</span>:</b> informe o e-mail antigo e o novo (que já deve ter conta). As demandas passam para a conta nova e a antiga sai da equipe.</li>
+<li><b>Limite de pessoas:</b> gratuito 3 · Starter 15 · Pro AI sem limite.</li>
+</ul>
+</section>
+
+<h2 id="conta">11. Minha conta (Configurações &amp; LGPD)</h2>
+<section>
+<ul>
+<li><b>Alterar senha:</b> digite a senha atual, a nova e a confirmação, e clique em Atualizar Senha.</li>
+<li><b>Alterar e-mail:</b> informe o novo e-mail e sua senha atual. Enviamos um <b>código de 6 dígitos</b> para o novo endereço; ao digitá-lo, a troca é concluída e você já entra com o e-mail novo.</li>
+<li><b>Verificação em duas etapas (2FA):</b> ative para pedir um código do app autenticador no login. Guarde os <b>códigos de backup</b> em local seguro.</li>
+<li><b>Aparência:</b> tema claro/escuro, modo daltônico e tamanho da fonte. Dados pessoais e LGPD também ficam aqui.</li>
+</ul>
+</section>
+
+<h2 id="planos">12. Planos</h2>
+<div class="tbl"><table>
+<thead><tr><th>Recurso</th><th>Gratuito</th><th>Starter</th><th>Pro AI</th></tr></thead>
+<tbody>
+<tr><td>Demandas</td><td>15</td><td>Ilimitadas</td><td>Ilimitadas</td></tr>
+<tr><td>Membros</td><td>3</td><td>15</td><td>Ilimitados</td></tr>
+<tr><td>Eventos no calendário</td><td>5</td><td>Ilimitados</td><td>Ilimitados</td></tr>
+<tr><td>Notificações por e-mail</td><td>Não</td><td>Sim</td><td>Sim</td></tr>
+<tr><td>Anotações do Workspace</td><td>Sim</td><td>Sim</td><td>Sim</td></tr>
+<tr><td>Ficha de paciente e agendamentos</td><td>Sim*</td><td>Sim</td><td>Sim</td></tr>
+<tr><td>Armazém de arquivos</td><td>Não</td><td>500 MB</td><td>5 GB</td></tr>
+<tr><td>Cláudia (IA)</td><td>Não</td><td>50 msgs/dia</td><td>300 msgs/dia</td></tr>
+<tr><td>Preço</td><td>Grátis</td><td>R$ 29,90/mês</td><td>R$ 69,90/mês</td></tr>
+</tbody></table></div>
+<p>* No plano gratuito, os agendamentos contam no limite de 5 eventos. A Cláudia (que também cria e edita anotações, pacientes e agendamentos pelo chat) é dos planos Starter e Pro AI.</p>
+<p>Assine em <b>Planos &amp; Assinatura</b>. Se o plano vencer, a conta volta ao gratuito e seus arquivos continuam disponíveis para baixar e apagar. Os limites valem para a <b>empresa</b>: se alguém da equipe tiver Starter ou Pro AI ativo, todos usam o calendário ilimitado e recebem avisos por e-mail.</p>
+
+<h2 id="ajuda">13. Deu algum problema?</h2>
+<section>
+<ul>
+<li><b>“E-mail inválido”:</b> escreva completo, com @ e domínio: <code>nome@gmail.com</code>.</li>
+<li><b>A Cláudia pediu o telefone/assunto:</b> responda enviando o comando de novo com a informação que faltou.</li>
+<li><b>Não vejo um contato/demanda de um colega:</b> atualize a página (F5). Se continuar, confira se vocês estão na <b>mesma empresa</b>.</li>
+<li><b>Limite de mensagens da Cláudia:</b> renova à meia-noite.</li>
+<li><b>“CPF inválido”:</b> confira os 11 números. O sistema confere os dígitos verificadores, então um CPF digitado errado é recusado.</li>
+<li><b>Não consigo editar ou apagar uma anotação:</b> só quem escreveu, o Dono ou o Gerente pode. Peça a um deles ou crie a sua própria anotação.</li>
+<li><b>A Cláudia disse que encontrou vários contatos ou eventos parecidos:</b> repita o pedido com o nome completo, o CPF ou a data do evento.</li>
+<li><b>“Limite de eventos atingido”:</b> a empresa no plano gratuito pode ter 5 eventos. Apague eventos antigos ou assine o Starter para ter calendário ilimitado.</li>
+<li><b>Ainda com dúvida?</b> Use o botão de <b>suporte</b> (canto da tela) para falar com a equipe.</li>
+</ul>
+</section>
+<footer>KL Web — tutorial do usuário</footer>
+</main>
+</body>
+</html>

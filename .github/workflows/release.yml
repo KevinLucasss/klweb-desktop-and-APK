@@ -1,0 +1,35 @@
+name: Build and Release Desktop App
+
+on:
+  push:
+    tags:
+      - 'v*' # Dispara quando você cria uma tag como v1.0.2
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        working-directory: ./desktop-app
+        run: npm install
+
+      - name: Build Electron App
+        working-directory: ./desktop-app
+        run: npm run build # Certifique-se que seu package.json tem esse script (ex: electron-builder build)
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: desktop-app/dist/*.exe # Ajuste o caminho conforme a pasta de saída do seu builder
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,104 @@
+.auth-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 460px);
+    align-items: center;
+    gap: 1.25rem;
+    width: min(100%, 460px);
+    margin: auto;
+}
+
+.auth-card {
+    margin: 0;
+}
+
+.auth-role-guide {
+    display: none;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--bg-card);
+    box-shadow: var(--shadow-glow);
+    color: var(--text-primary);
+}
+
+#auth-screen.is-register-mode .auth-layout {
+    grid-template-columns: minmax(0, 460px) minmax(280px, 340px);
+    width: min(100%, 820px);
+}
+
+#auth-screen.is-register-mode .auth-role-guide {
+    display: block;
+}
+
+.auth-guide-eyebrow {
+    margin-bottom: 0.55rem;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.auth-role-guide h2 {
+    margin-bottom: 1.1rem;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    line-height: 1.25;
+}
+
+.auth-role-list {
+    display: grid;
+    gap: 0.9rem;
+    list-style: none;
+}
+
+.auth-role-list li {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.auth-role-list strong {
+    font-size: 0.9rem;
+}
+
+.auth-role-list strong i {
+    width: 1.1rem;
+    color: var(--accent);
+}
+
+.auth-role-list span,
+.auth-code-warning p {
+    color: var(--text-secondary);
+    font-size: 0.79rem;
+    line-height: 1.5;
+}
+
+.auth-code-warning {
+    margin-top: 1.1rem;
+    padding: 0.9rem;
+    border: 1px solid rgba(245, 158, 11, 0.45);
+    border-radius: var(--radius-md);
+    background: rgba(245, 158, 11, 0.08);
+}
+
+.auth-code-warning strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--text-primary);
+    font-size: 0.82rem;
+}
+
+.auth-code-warning strong i {
+    color: #d97706;
+}
+
+@media (max-width: 860px) {
+    #auth-screen.is-register-mode .auth-layout {
+        grid-template-columns: minmax(0, 460px);
+        width: min(100%, 460px);
+    }
+
+    .auth-role-guide {
+        padding: 1.25rem;
+    }
+}
