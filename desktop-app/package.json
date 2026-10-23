@@ -10,7 +10,10 @@
     "build-mac": "electron-builder --mac",
     "build-linux": "electron-builder --linux"
   },
-  "author": "KL Web",
+  "author": {
+    "name": "KL Web",
+    "email": "contato@klweb.com.br"
+  },
   "license": "ISC",
   "repository": {
     "type": "git",
