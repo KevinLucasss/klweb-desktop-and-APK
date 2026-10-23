@@ -1,8 +1,0 @@
-.master-auth-card{max-width:460px}
-.master-status-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.3);border-radius:8px;padding:.6rem 1rem;margin-bottom:1rem;font-size:.85rem;color:#a5b4fc}
-.master-subtabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;border-bottom:1px solid var(--border);padding-bottom:.75rem}
-.master-subtab{background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text-secondary);padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-size:.85rem}
-.master-subtab:hover{color:var(--text-primary)}
-.master-subtab.active{background:rgba(0,198,255,.15);border-color:rgba(0,198,255,.5);color:var(--text-primary)}
-.master-section{margin-bottom:1rem}
-#tab-master #master-users-list{max-height:none}

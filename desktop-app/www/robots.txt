@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /reset-password.html
-
-Sitemap: https://klweb.com.br/sitemap.xml
